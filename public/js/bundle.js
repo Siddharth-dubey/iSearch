@@ -12040,7 +12040,7 @@ exports.default = _react2.default.createElement(
 	_react2.default.createElement(
 		_reactRouter.Route,
 		null,
-		_react2.default.createElement(_reactRouter.Route, { path: '/', component: _HomeLayout2.default })
+		_react2.default.createElement(_reactRouter.Route, { path: '/iSearch', component: _HomeLayout2.default })
 	)
 );
 
