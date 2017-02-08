@@ -12051,7 +12051,7 @@ exports.default = _react2.default.createElement(
 		_react2.default.createElement(_reactRouter.Route, { path: '/isearch', component: _HomeLayout2.default }),
 		_react2.default.createElement(
 			_reactRouter.Route,
-			{ path: 'search', component: _SearchHeaderLayout2.default },
+			{ path: '/search', component: _SearchHeaderLayout2.default },
 			_react2.default.createElement(_reactRouter.Route, { path: 'home', component: _SearchHomeLayout2.default })
 		)
 	)
