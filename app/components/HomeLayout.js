@@ -26,7 +26,7 @@ render (){
 							Look up for the Artists,songs and apps that you would enjoy in your device
 						</div>
 						<div className="start_button">
-							<Link to="/isearch/search/home">Start searching	</Link>
+							<Link to="/iSearch/search/home">Start searching	</Link>
 						</div>
 					</div>
 				</div>
