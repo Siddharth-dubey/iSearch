@@ -9,7 +9,7 @@ export default (
 	<Router history={browserHistory}>
 		<Route>
 			<Route path="/iSearch/" component={HomeLayout}></Route>
-			<Route path="/search" component={SearchHeaderLayout}>
+			<Route path="/iSearch/search" component={SearchHeaderLayout}>
 				<Route path="home" component={SearchHomeLayout}/>
 			</Route>
 		</Route>
