@@ -8,8 +8,8 @@ import SearchHomeLayout from './components/SearchHomeLayout';
 export default (
 	<Router history={browserHistory}>
 		<Route>
-			<Route path="/isearch" component={HomeLayout}></Route>
-			<Route path="search" component={SearchHeaderLayout}>
+			<Route path="/iSearch" component={HomeLayout}></Route>
+			<Route path="/search" component={SearchHeaderLayout}>
 				<Route path="home" component={SearchHomeLayout}/>
 			</Route>
 		</Route>
