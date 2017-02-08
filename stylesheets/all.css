@@ -1,0 +1,112 @@
+/*All css*/
+/*-------------------------------------------------------*/
+
+
+/*HomePage Layout*/
+
+
+		.homepage_container{
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			font-family: 'Open Sans Condensed', sans-serif;
+		}
+		.fullscreen_background{
+			    width: 100%;
+			    height: 100%;
+			    position: fixed;
+			    background: url('./public/images/b2.jpg');
+			    background-size: cover;
+			    background-position: 40%;
+		}
+		.homepage_content{
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			background: rgba(0,0,0,0.5);
+			    display: flex;
+    align-items: center;
+		}
+		.homepage_header{
+			position: fixed;
+			width: 100%;
+			box-sizing: border-box;
+			padding: 10px 20px;
+			top: 0;
+		}
+		.header_title{
+			color: #fff;
+		    font-family: 'Open Sans Condensed', sans-serif;
+		    font-size: 2em;
+		}
+		.homepage_body{
+		    position: relative;
+		    color: #fff;
+		    text-align: center;
+		    font-size: 14px;
+		    width: 90vw;
+		    margin: 15vh auto;
+		}
+		.homepage_body_title{
+			font-size: 4em;
+		}
+		.homepage_body_text{
+			font-size: 2em;
+		    margin: 5vh 0;
+		}
+		.homepage_body_subtext{
+		    font-size: 1.5em;
+		    margin: 2vh 0;
+		}
+		.start_button{
+			position: relative;
+    box-sizing: border-box;
+    margin: 5vh 0;
+		}
+		.start_button a{
+			    padding: 10px;
+    box-sizing: border-box;
+    /*background: #52658b;*/
+    /*background: #BF360C;*/
+    background: #D84315;
+    border-radius: 10px;
+    font-size: 1.5em;
+    color: #e8e8e8;
+		}
+		.start_button a:hover{
+			text-decoration: none;
+			background: #BF360C;
+		}
+		.footer_wrap{
+			position: absolute;
+			bottom: 0;
+			left:0;
+			width: 100%;
+		}
+		.footer_note{
+			
+			color: #fff;
+			
+			text-align: center;
+			    font-size: 1.4em;
+    padding: 2px;
+		}
+		.footer_note a{
+			color: #fff;
+			text-decoration: underline;
+		}
+		@media (max-width: 320px){
+			.footer_note{
+				font-size: 1.5em;
+			}
+			.homepage_body_title{
+				font-size: 3em;
+			}
+			.homepage_body_text{
+				font-size: 1.5em;
+			}
+			.footer_note{
+				font-size: 1em;
+			}
+		}
+/*---------------------------------------*/

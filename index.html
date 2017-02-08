@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>iSearch</title>
-	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="public/css/bootsstrap.min.css">
 	<style type="text/css">
 		.homepage_container{
 			position: fixed;
@@ -109,11 +109,264 @@
 				font-size: 1em;
 			}
 		}
+		/*Search page*/
+		body{padding: 0;margin:0;font-family: 'Open Sans Condensed', sans-serif}
+
+		/*SearchPage Header*/
+		.searchpageHeader_container{
+			position: relative;
+			background: #fff;
+			font-size: 14px;
+		}
+		.searchpage_header{
+			position: relative;
+			width: 100%;
+			height: 8vh;
+			box-shadow:  0 0 10px #ddd;
+		}
+		.searchpage_header_title{
+			font-size: 1.5em;
+    padding: 0px 5px;
+    height: 8vh;
+    font-family:'Open Sans Condensed', sans-serif; 
+    line-height: 8vh;
+    box-sizing: border-box;
+		}
+		.searchpage_header_input_wrap{
+			height: 8vh;
+		}
+		.searhpage_header_inp_box{
+		height: 6vh;
+    color: #332828;
+    width: 90%;
+    padding: 1vh;
+    float: left;
+    background: #e0d0d0;
+    margin: 1vh 0;
+    outline: none;
+    border: none;
+    font-size: 1.25em;
+    box-sizing: border-box;
+     font-family:'Open Sans Condensed', sans-serif; 
+		}
+		.searchpage_header_search_btn{
+			padding: 1vh 0;
+    text-align: left;
+    display: inline-block;
+    border: none;
+    margin: 1vh 0;
+    line-height: 4vh;
+    text-align: center;
+    width: 10%;
+    height: 6vh;
+    box-sizing: border-box;
+    background: #e0d0d0;
+		}
+		.filter_search_wrap{
+			display: none;
+			width: 95vw;
+    text-align: center;
+    margin: 1vh auto;
+     font-family:'Open Sans Condensed', sans-serif; 
+
+		}
+		.filter_search_wrap > input[type="radio"]{
+			display: none;
+		}
+		.filter_search_wrap >input[type=radio] + label{
+			    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin: 1vh;
+    font-size: 1.0em;
+    color: #fff;
+    background: #e0d0d0;
+    border-radius: 10px;
+     font-family:'Open Sans Condensed', sans-serif; 
+		}
+		.filter_search_wrap >input[type=radio]:checked + label{
+			background: #f00;
+		}
+
+		
+		/*SearchPage Main*/
+
+
+
+
+		/*grid styles*/
+		.pd0{
+			padding: 0 !important;
+		}
+		.small-3{
+			width: 25%;float: left;padding: 0 1vw;box-sizing: border-box;
+		}
+		.small-4{
+			width: 33.33%;float: left;padding: 0 1vw;box-sizing: border-box;
+		}
+		.small-6{
+			width: 50%;float: left;padding: 0 1vw;box-sizing: border-box;
+		}.small-8{
+			width: 66.66%;float: left;padding: 0 1vw;box-sizing: border-box;
+		}
+		.small-12{
+			width: 100%;float: left;padding: 0 1vw;box-sizing: border-box;
+		}
+		@media (min-width: 720px){
+		.med-2{
+			width: 16.66%;float: left;padding: 0 1vw;box-sizing: border-box
+		}
+		.med-3{
+			width: 25%;float: left;padding: 0 1vw;box-sizing: border-box
+		}
+		.med-4{
+			width: 33.33%;float: left;padding: 0 1vw;box-sizing: border-box
+		}
+		.med-6{
+			width: 50%;float: left;padding: 0 1vw;box-sizing: border-box
+		}
+		.med-12{
+			width: 100%;float: left;padding: 0 1vw;box-sizing: border-box
+		}
+	}
+		@media (min-width: 960px){
+		.large-2{
+			width: 16.66%;float: left;padding: 0 1vw;box-sizing: border-box
+		}
+		.large-3{
+			width: 25%;float: left;padding: 0 1vw;box-sizing: border-box
+		}
+		.large-4{
+			width: 33.33%;float: left;padding: 0 1vw;box-sizing: border-box
+		}
+		.large-6{
+			width: 50%;float: left;padding: 0 1vw;box-sizing: border-box
+		}
+		.large-12{
+			width: 100%;float: left;padding: 0 1vw;box-sizing: border-box
+		}
+		}
+		.clearfix:after {
+    content:"";
+    display:block;
+    clear:both;
+}
+		/*xxx*/
+		.searchHome_container{
+			position: relative;
+			margin:2vh auto;
+			width: 80vw;
+		}
+		.selected_list_wrap{
+			position: relative;
+		}
+		.selected_list_card{
+			width: 100%;
+    height: auto;
+    position: relative;
+    margin:1vh 0;
+    box-sizing: border-box;
+		}
+		.card_image{
+			display: block;
+    max-width: 100%;
+    height: auto;
+		}
+		.card_overlay{
+			    background: rgba(0,0,0,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+		}
+		.card_overlay:hover{
+		-webkit-transition: .25s all ease-out;
+    background: rgba(0,0,0,0.3);
+    cursor: pointer;
+		}
+		.card_link{
+			    text-decoration: none;
+    color: #fff;
+		}
+		.card_text{
+			    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-family: 'Open Sans Condensed', sans-serif;
+		}
+		@media (max-width: 320px) {
+			.searchHome_container{
+				width: 95vw;
+			}	
+			.card_text{
+				font-size:1.25em;
+			}
+		}
+		@media (min-width: 320px) and (max-width: 720px) {
+			.searchHome_container{
+				width: 95vw;
+			}	
+		}
+
+		.searchpage_footer{
+		    position: relative;
+		    width: 100%;
+		}
+		.s_footer_note{
+			margin:0 auto;
+			text-align: center;
+    		font-size: 1.25em;
+    		padding: 2px;
+		}
+		/*featured_items*/
+		.featured_row{
+			margin:1vh 0;
+		}
+		.featured_title{
+			font-size: 1.5em;
+			margin:2vh 0;
+		}
+		.featured_list{
+			margin:1vh 0;
+		}
+		.featured_card{
+			    margin: 1vh 0;
+			box-shadow:0 0 10px #bbb8b8;
+		}
+		.featured_card_info{
+			padding: 10px;
+			font-weight: bold;
+		}
+		.main_info{
+			  width: 95%;
+  			white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+		}
+		.main_info a{
+			color: #000;
+			text-decoration:none;
+		}
+		.main_info a:hover{
+			color: #332828;
+		}
+		.sub_info a{
+			color: #000;
+			text-decoration:none;
+		}
+		.sub_info a:hover{
+			color: #332828;
+		}
 	</style>
 </head>
 <body>
 	<div id="root">
-		
+
 	</div>
 	<script type="text/javascript" src="public/js/bundle.js"></script>
 	<script src="https://use.fontawesome.com/36fccaf7f5.js"></script>
