@@ -18,7 +18,7 @@ class SearchHomeLayout extends React.Component{
 					<div className="selected_list_card">
 						<img src="/public/images/x1.jpg" className="card_image" />
 						<div className="card_overlay">
-							<Link href="#" className="card_link">
+							<Link to="/search/BestOff/apps" className="card_link">
 								<span className="card_text">Best of Apps</span>
 							</Link>
 						</div>
@@ -28,7 +28,7 @@ class SearchHomeLayout extends React.Component{
 					<div className="selected_list_card">
 						<img src="/public/images/x5.jpg" className="card_image" />
 						<div className="card_overlay">
-							<Link href="#" className="card_link">
+							<Link to="/search/BestOff/movies" className="card_link">
 								<span className="card_text">Best of Movies</span>
 							</Link>
 						</div>
@@ -38,7 +38,7 @@ class SearchHomeLayout extends React.Component{
 					<div className="selected_list_card">
 						<img src="/public/images/x7.jpg" className="card_image" />
 						<div className="card_overlay">
-							<Link href="#" className="card_link">
+							<Link to="/search/BestOff/music" className="card_link">
 								<span className="card_text">Best of Music</span>
 							</Link>
 						</div>
@@ -48,7 +48,7 @@ class SearchHomeLayout extends React.Component{
 					<div className="selected_list_card">
 						<img src="/public/images/x6	.jpg" className="card_image" />
 						<div className="card_overlay">
-							<Link href="#" className="card_link">
+							<Link to="/search/BestOff/podcast" className="card_link">
 								<span className="card_text">Best of Podcast</span>
 							</Link>
 						</div>

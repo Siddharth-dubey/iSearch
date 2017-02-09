@@ -46,19 +46,52 @@ class FeaturedListLayout extends React.Component{
 		}
 	}
 
-	componentDidMount(){
+
+	getData(){
 		var that=this;
-		var items;
-		var list=this.FetchFeaturedData();
-		this.getAllJson(list.urls).then((results)=>{
+		if(!this.props.type){
+			var list=this.FetchFeaturedData();
+			this.getAllJson(list.urls).then((results)=>{
 			console.log(results);
 			that.setState({urlsData:results})
-		});
+			});
+		}
+		else if(this.props.type=="apps"){
+			var list=this.getJson('https://itunes.apple.com/us/rss/topgrossingapplications/limit=48/json').then((result)=>{
+				that.setState({urlsData:[result]});
+			});
+		}
+		else if(this.props.type=="movies"){
+			var list=this.getJson('https://itunes.apple.com/us/rss/topmovies/limit=48/json').then((result)=>{
+				that.setState({urlsData:[result]});
+			});
+		}
+		else if(this.props.type=="music"){
+			var list=this.getJson('https://itunes.apple.com/us/rss/topsongs/limit=48/explicit=true/json').then((result)=>{
+				that.setState({urlsData:[result]});
+			});
+		}
+		else if(this.props.type=="podcast"){
+			var list=this.getJson('https://itunes.apple.com/us/rss/toppodcasts/limit=48/explicit=true/json').then((result)=>{
+				that.setState({urlsData:[result]});
+			});
+		}
 	}
+
+	// componentDidMount(){
+	// 	var that=this;
+	// 	var items;
+	// 	var list=this.FetchFeaturedData();
+	// 	this.getAllJson(list.urls).then((results)=>{
+	// 		console.log(results);
+	// 		that.setState({urlsData:results})
+	// 	});
+	// }
 
 	render(){
 		console.log('Rendering FeatureList');
 		var finalList=[];
+
 		if(this.state.urlsData.length!==0){
 			finalList=this.state.urlsData.map(item=> <FeaturedRowLayout title={item} data={item} />);
 			return (
@@ -68,14 +101,15 @@ class FeaturedListLayout extends React.Component{
 			)
 		}
 		else{
-			console.log('HEREEEEEE')
+			console.log('HEREEEEEE');
+			this.getData();
 			return (
 			<div className="quotes">
 				Great things come out of patience		
 			</div>
 		)	
 		}
-		
+			
 	}
 }
 
