@@ -12627,7 +12627,7 @@ var HomeLayout = function (_React$Component) {
 								{ className: 'start_button' },
 								_react2.default.createElement(
 									_reactRouter.Link,
-									{ to: '/search/home' },
+									{ to: '/iSearch/search/home' },
 									'Start searching '
 								)
 							)
