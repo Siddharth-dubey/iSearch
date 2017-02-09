@@ -12881,7 +12881,7 @@ var SearchHomeLayout = function (_React$Component) {
 						_react2.default.createElement(
 							'div',
 							{ className: 'selected_list_card' },
-							_react2.default.createElement('img', { src: '/public/images/x1.jpg', className: 'card_image' }),
+							_react2.default.createElement('img', { src: '/iSearch/public/images/x1.jpg', className: 'card_image' }),
 							_react2.default.createElement(
 								'div',
 								{ className: 'card_overlay' },
@@ -12903,7 +12903,7 @@ var SearchHomeLayout = function (_React$Component) {
 						_react2.default.createElement(
 							'div',
 							{ className: 'selected_list_card' },
-							_react2.default.createElement('img', { src: '/public/images/x5.jpg', className: 'card_image' }),
+							_react2.default.createElement('img', { src: '/iSearch/public/images/x5.jpg', className: 'card_image' }),
 							_react2.default.createElement(
 								'div',
 								{ className: 'card_overlay' },
@@ -12925,7 +12925,7 @@ var SearchHomeLayout = function (_React$Component) {
 						_react2.default.createElement(
 							'div',
 							{ className: 'selected_list_card' },
-							_react2.default.createElement('img', { src: '/public/images/x7.jpg', className: 'card_image' }),
+							_react2.default.createElement('img', { src: '/iSearch/public/images/x7.jpg', className: 'card_image' }),
 							_react2.default.createElement(
 								'div',
 								{ className: 'card_overlay' },
@@ -12947,7 +12947,7 @@ var SearchHomeLayout = function (_React$Component) {
 						_react2.default.createElement(
 							'div',
 							{ className: 'selected_list_card' },
-							_react2.default.createElement('img', { src: '/public/images/x6\t.jpg', className: 'card_image' }),
+							_react2.default.createElement('img', { src: '/iSearch/public/images/x6\t.jpg', className: 'card_image' }),
 							_react2.default.createElement(
 								'div',
 								{ className: 'card_overlay' },
