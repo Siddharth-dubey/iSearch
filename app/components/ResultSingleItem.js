@@ -55,10 +55,10 @@ class ResultSingleItem extends React.Component{
 					<img src={imageUrl} alt="" className="card_image" />
 					<div className="result_card_info">
 						<div className="main_info">
-							<Link to={`/search/query/${data.trackName}/all/`}>{data.trackName}</Link>
+							<Link to={`/iSearch/search/query/${data.trackName}/all/`}>{data.trackName}</Link>
 						</div>
 						<div className="sub_info">
-							<Link to={`/search/query/${data.artistName}/all/`}><small>{data.artistName}</small></Link>
+							<Link to={`/iSearch/search/query/${data.artistName}/all/`}><small>{data.artistName}</small></Link>
 						</div>
 						<div className="preview_button_wrap">
 						{previewUrl}
@@ -77,7 +77,7 @@ class ResultSingleItem extends React.Component{
 			</div>
 		)
 	}
-	//Transfer data to other view [TODO]
+	
 
 }
 

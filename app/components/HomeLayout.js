@@ -27,13 +27,13 @@ render (){
 						</div>
 						<div className="start_button">
 							
-							<Link to="/search/home">Start searching	</Link>
+							<Link to="/iSearch/search/home">Start searching	</Link>
 						</div>
 					</div>
 				</div>
 				<footer className="footer_wrap">
 					<div className="footer_note">
-						A open Source project made with <span className="fa fa-heart"></span>  by <a href="#">Siddharth Dubey</a>. All Apple logos,name &amp; iTunes are part of Apple Inc.
+						A open Source project made with <span className="fa fa-heart"></span>  by <a href="https://github.com/Siddharth-dubey">Siddharth Dubey</a>. All Apple logos,name &amp; iTunes are part of Apple Inc.
 					</div>
 				</footer>
 			</div>

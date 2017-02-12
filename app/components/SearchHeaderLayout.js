@@ -15,7 +15,7 @@ class SearchHeaderLayout extends React.Component{
 	handleSubmit=(e)=>{
 		e.preventDefault();
 		console.log(this.state.value);
-		browserHistory.push('/search/query/'+this.state.value+'/'+this.state.filter);
+		browserHistory.push('/iSearch/search/query/'+this.state.value+'/'+this.state.filter);
 	}
 
 	handleChange=(e)=>{
@@ -26,7 +26,7 @@ class SearchHeaderLayout extends React.Component{
 
 	handleFilterChange=(e)=>{
 		console.log('FIlter Changed :' + e.target.value);
-		browserHistory.push('/search/query/'+this.state.value+'/'+e.target.value);
+		browserHistory.push('/iSearch/search/query/'+this.state.value+'/'+e.target.value);
 	}
 
 	render (){
@@ -39,7 +39,7 @@ class SearchHeaderLayout extends React.Component{
 				<div className="searchpage_header">
 					<div className="small-4 large-3">
 						<div className="searchpage_header_title">
-							<Link to="/"><span className="fa fa-apple"></span> iSearch</Link>
+							<Link to="/iSearch"><span className="fa fa-apple"></span> iSearch</Link>
 						</div>
 					</div>
 					<div className="small-8 large-6">

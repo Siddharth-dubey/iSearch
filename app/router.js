@@ -10,8 +10,8 @@ import SearchResultLayout from './components/SearchResultLayout';
 export default (
 	<Router history={browserHistory}>
 		<Route>
-			<Route path="/" component={HomeLayout}></Route>
-			<Route path="/search" component={SearchHeaderLayout}>
+			<Route path="/iSearch" component={HomeLayout}></Route>
+			<Route path="/iSearch/search" component={SearchHeaderLayout}>
 				<Route path="home" component={SearchHomeLayout}/>
 				<Route path="BestOff/:item" component={BestOfLayout}/>
 				<Route path="query/:query/:filter" component={SearchResultLayout}/>

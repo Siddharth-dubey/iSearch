@@ -23,10 +23,10 @@ class SingleFeaturedItem extends React.Component{
 				<img className="card_image" src= {img_src}/>
 				<div className="featured_card_info">
 					<div className="main_info">
-						<Link to={`/search/query/${data['im:name'].label}/all/`}>{data['im:name'].label}</Link>
+						<Link to={`/iSearch/search/query/${data['im:name'].label}/all/`}>{data['im:name'].label}</Link>
 					</div>
 					<div className="sub_info">
-						<Link to={`/search/query/${data['im:artist'].label}/all/`}>
+						<Link to={`/iSearch/search/query/${data['im:artist'].label}/all/`}>
 							<small>{data['im:artist'].label}</small>
 						</Link>
 					</div>
