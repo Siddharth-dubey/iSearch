@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router'
 
 
 class SingleFeaturedItem extends React.Component{
@@ -22,12 +23,12 @@ class SingleFeaturedItem extends React.Component{
 				<img className="card_image" src= {img_src}/>
 				<div className="featured_card_info">
 					<div className="main_info">
-						<a href="#">{data['im:name'].label}</a>
+						<Link to={`/search/query/${data['im:name'].label}/all/`}>{data['im:name'].label}</Link>
 					</div>
 					<div className="sub_info">
-						<a href="#">
-							<small>Disney</small>
-						</a>
+						<Link to={`/search/query/${data['im:artist'].label}/all/`}>
+							<small>{data['im:artist'].label}</small>
+						</Link>
 					</div>
 				</div>
 			</div>

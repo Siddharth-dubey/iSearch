@@ -27,7 +27,7 @@ render (){
 						</div>
 						<div className="start_button">
 							
-							<Link to="/iSearch/search/home">Start searching	</Link>
+							<Link to="/search/home">Start searching	</Link>
 						</div>
 					</div>
 				</div>

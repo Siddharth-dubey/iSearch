@@ -93,7 +93,7 @@ class FeaturedListLayout extends React.Component{
 		var finalList=[];
 
 		if(this.state.urlsData.length!==0){
-			finalList=this.state.urlsData.map(item=> <FeaturedRowLayout title={item} data={item} />);
+			finalList=this.state.urlsData.map((item,index)=> <FeaturedRowLayout key={index} title={item} data={item} />);
 			return (
 				<div>
 					{finalList}

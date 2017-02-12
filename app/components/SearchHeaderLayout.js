@@ -30,6 +30,8 @@ class SearchHeaderLayout extends React.Component{
 	}
 
 	render (){
+		// var showFilter=(this.state.value.length!=0)?'block':'none';
+		var showFilter={display: (this.state.value.length!=0)?'block':'none'};
 	return (
 		<div>
 <div className="searchpageHeader_container">
@@ -37,7 +39,7 @@ class SearchHeaderLayout extends React.Component{
 				<div className="searchpage_header">
 					<div className="small-4 large-3">
 						<div className="searchpage_header_title">
-							<span className="fa fa-apple"></span> iSearch
+							<Link to="/"><span className="fa fa-apple"></span> iSearch</Link>
 						</div>
 					</div>
 					<div className="small-8 large-6">
@@ -50,7 +52,7 @@ class SearchHeaderLayout extends React.Component{
 					</div>
 					
 				</div>
-				<div className="filter_search_wrap">
+				<div className="filter_search_wrap" style={showFilter}>
 				Filter:
 	 				<input type="radio" id="radio1" name="radios" onChange={this.handleFilterChange} checked={this.state.filter==''} value="all" />
 	       			<label htmlFor="radio1"><span className="fa fa-globe"></span> All</label>

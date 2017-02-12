@@ -132,6 +132,17 @@
     line-height: 8vh;
     box-sizing: border-box;
 		}
+		.searchpage_header_title{
+			color: #000
+		}
+		.searchpage_header_title a{
+			color: #000;
+			text-decoration: none;
+		}
+		.searchpage_header_title a:hover{
+			color: #000;
+			text-decoration: underline;
+		}
 		.searchpage_header_input_wrap{
 			height: 8vh;
 		}
@@ -256,7 +267,7 @@
 		.searchHome_container{
 			position: relative;
 			margin:2vh auto;
-			width: 80vw;
+			width: 90vw;
 		}
 		.selected_list_wrap{
 			position: relative;
@@ -350,18 +361,80 @@
 		}
 		.main_info a{
 			color: #000;
-			text-decoration:none;
+			text-decoration:underline;
 		}
 		.main_info a:hover{
 			color: #332828;
 		}
 		.sub_info a{
 			color: #000;
-			text-decoration:none;
+			text-decoration:underline;
 		}
 		.sub_info a:hover{
 			color: #332828;
 		}
+
+		/*search results*/
+		.card_imp_info{
+			    background: #ddd;
+    padding: 5px;
+		}
+		.result_card{
+			    margin: 2vh 0;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 10px #bbb8b8;
+		}
+		.result_card_info{    padding: 30px 10px 10px;
+    font-size: 1em;
+    position: relative;
+    border-top: 1px solid #ddd;
+    font-weight: bold;}
+		   .seperator{
+		   	border-right:1px solid #beb8b8
+		   }
+		   .preview_button_wrap{
+		   	    position: absolute;
+    top: -20px;
+    left: 10px;
+		   }
+		   .preview_button_wrap:hover{
+		   	cursor: pointer;
+		   }
+		   .preview_button{
+		   	border: none;
+		   	cursor: pointer;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    background: #D84315;
+    font-size: 1em;
+    box-shadow: 0px 4px 10px #747171;
+    line-height: 5px;
+    text-align: center;
+		   }
+		   .preview_button:hover{
+		   	background: #f00;
+		   }
+		   .preview_button:focus{
+		   	outline: none;	
+		   }
+		   .card_price , .itunes_link{
+		   	text-align: center;
+		   }
+
+		   /*Audio*/
+		   .audio_wrap{
+		   	position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 32px;
+		   }
+		   .audio_wrap audio{
+		   	width: 100%;
+
+		   }
 	</style>
 </head>
 <body>
