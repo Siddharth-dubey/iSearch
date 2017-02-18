@@ -6,6 +6,7 @@ import SearchHeaderLayout from './components/SearchHeaderLayout';
 import SearchHomeLayout from './components/SearchHomeLayout';
 import BestOfLayout from './components/BestOfLayout';
 import SearchResultLayout from './components/SearchResultLayout';
+import NotFoundLayout from './components/NotFoundLayout';
 
 export default (
 	<Router history={browserHistory}>
@@ -16,6 +17,7 @@ export default (
 				<Route path="BestOff/:item" component={BestOfLayout}/>
 				<Route path="query/:query/:filter" component={SearchResultLayout}/>
 			</Route>
+			<Route path="*" component={NotFoundLayout}/>
 		</Route>
 	</Router>
 );
