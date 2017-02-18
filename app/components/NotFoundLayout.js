@@ -15,4 +15,4 @@ class NotFoundLayout extends React.Component{
 
 }
 
-export default AudioPreview;
+export default NotFoundLayout;
