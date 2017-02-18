@@ -14178,14 +14178,14 @@ var Results = function (_React$Component) {
 		key: 'render',
 		value: function render() {
 			console.log('rendered');
-			var items = this.state.result.length != 0 ? this.createList(this.state.result) : 'No resuls found';
+			var items = this.state.result.length != 0 && this.state.isFetching == true ? this.createList(this.state.result) : 'No resuls found';
 			return _react2.default.createElement(
 				'div',
 				{ className: 'small-12 large-12' },
 				_react2.default.createElement(
 					'span',
 					null,
-					'Loading:',
+					'Status:',
 					this.state.isFetching == true ? "Loading" : "Done"
 				),
 				_react2.default.createElement(

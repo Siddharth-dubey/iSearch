@@ -53,10 +53,10 @@ class Results extends React.Component{
 
 	render(){
 		console.log('rendered')
-		var items=(this.state.result.length!=0)?this.createList(this.state.result):'No resuls found';
+		var items=((this.state.result.length!=0) && (this.state.isFetching==true) )?this.createList(this.state.result):'No resuls found';
 		return (
 			<div className="small-12 large-12">
-				<span>Loading:{this.state.isFetching==true?"Loading":"Done"}</span>
+				<span>Status:{this.state.isFetching==true?"Loading":"Done"}</span>
 				<div className="featured_title">
 					Results for <strong>{this.props.data.query}</strong>
 				</div>
