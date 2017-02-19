@@ -14177,8 +14177,11 @@ var Results = function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
+			var items = []; //
 			console.log('rendered');
-			var items = this.state.result.length != 0 && this.state.isFetching == true ? this.createList(this.state.result) : 'No resuls found';
+			if (this.state.isFetching == false) {
+				items = this.state.result.length != 0 ? this.createList(this.state.result) : 'No resuls found';
+			}
 			return _react2.default.createElement(
 				'div',
 				{ className: 'small-12 large-12' },

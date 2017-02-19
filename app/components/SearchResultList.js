@@ -52,8 +52,11 @@ class Results extends React.Component{
 	}
 
 	render(){
+		var items=[]; //
 		console.log('rendered')
-		var items=((this.state.result.length!=0) && (this.state.isFetching==true) )?this.createList(this.state.result):'No resuls found';
+		if(this.state.isFetching==false){
+				items=(this.state.result.length!=0 )?this.createList(this.state.result):'No resuls found';
+		}
 		return (
 			<div className="small-12 large-12">
 				<span>Status:{this.state.isFetching==true?"Loading":"Done"}</span>
