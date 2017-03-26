@@ -1,27 +1,25 @@
 # iSearch
-___
+
 ### A website designed to search complete iTunes Store for anything from Apps, Artists, Songs to Podcasts.
 
 #### Demo :  [iSearch](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
 
 Here are some screenshots of the same:
 #### Home Page
-____
 
 ![N|Solid](http://i.imgur.com/c6lsq3i.jpg)
 
 #### Search Page
-____
+
 
 ![N|Solid](http://i.imgur.com/Fs0mK0L.jpg)
 
 #### Results Page
-____
+
 ![N|Solid](http://i.imgur.com/pgACaGR.jpg)
 
 
 # Features!
-___
 
   - Complete iTunes search from the browser
   - Listen to preview of the Songs
@@ -29,7 +27,7 @@ ___
   - Preview track keeps playing in background while you search on
 
 # Tech
-___
+
 
 iSearch uses a number of open source projects to work properly:
 
