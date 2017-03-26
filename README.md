@@ -35,7 +35,7 @@ iSearch uses a number of open source projects to work properly:
 * [React Router](https://github.com/ReactTraining/react-router) - Declarative routing for React
 * [Webpack](https://webpack.github.io) - Module Bundler
 * [iTunes Api](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/) - Search API from Apple
-* [node.js] - Server-side JavaScript environment
+* [node.js](https://nodejs.org) - Server-side JavaScript environment
 
 # Todos
 
@@ -52,5 +52,6 @@ Love to see if you want to fork and make something great
 
 # License
 MIT
+
 **All Apple logos, icons and iTunes are part of Apple Inc.**
 
