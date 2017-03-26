@@ -2,7 +2,7 @@
 
 ### A website designed to search complete iTunes Store for anything from Apps, Artists, Songs to Podcasts.
 
-#### Demo :  [iSearch](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
+#### Demo :  [iSearch](https://siddharth-dubey.github.io/iSearch/)
 
 Here are some screenshots of the same:
 #### Home Page
