@@ -1,8 +1,58 @@
 # iSearch
-A beautiful tool for iTunes search.Built into your browser.
+___
+### A website designed to search complete iTunes Store for anything from Apps, Artists, Songs to Podcasts.
 
-Look up for the Artists,songs and apps that you would enjoy in your device.
+#### Demo :  [iSearch](https://github.com/joemccann/dillinger/blob/master/KUBERNETES.md)
 
-![alt tag](https://s22.postimg.org/q4mrw8ntt/isearch_home.jpg)
+Here are some screenshots of the same:
+#### Home Page
+____
 
-Special thanks to  Sandhya  for beta testing 
+![N|Solid](http://i.imgur.com/c6lsq3i.jpg)
+
+#### Search Page
+____
+
+![N|Solid](http://i.imgur.com/Fs0mK0L.jpg)
+
+#### Results Page
+____
+![N|Solid](http://i.imgur.com/pgACaGR.jpg)
+
+
+# Features!
+___
+
+  - Complete iTunes search from the browser
+  - Listen to preview of the Songs
+  - Fully Responsive
+  - Preview track keeps playing in background while you search on
+
+# Tech
+___
+
+iSearch uses a number of open source projects to work properly:
+
+* [React JS](https://facebook.github.io/react/) -  A JavaScript library for building user interfaces
+* [React Router](https://github.com/ReactTraining/react-router) - Declarative routing for React
+* [Webpack](https://webpack.github.io) - Module Bundler
+* [iTunes Api](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/) - Search API from Apple
+* [node.js] - Server-side JavaScript environment
+
+# Todos
+
+* Add option to change Country
+* Night Mode
+
+# Acknowledgement 
+A very special thanks to :rose: **Sandhya** :rose:  for beta testing
+
+# Development
+
+Want to contribute? Great!
+Love to see if you want to fork and make something great
+
+# License
+MIT
+**All Apple logos, icons and iTunes are part of Apple Inc.**
+
